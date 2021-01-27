@@ -29,8 +29,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v1
         with:
-          path: /container/run_parcels
-          file: /container/run_parcels/Dockerfile
+          path: ./container/run_parcels
+          file: ./container/run_parcels/Dockerfile
           repository: willirath/geomar-od-lagrange
           add_git_labels: true
           tag_with_ref: true
